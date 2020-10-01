@@ -36,10 +36,10 @@ apt install wazuh-manager=3.12.3-1
 ###############################
 # Install wazuh api
 ###############################
-echo Wazuh api=3.12.3-1
+echo Wazuh api
 curl -sL https://deb.nodesource.com/setup_10.x | bash -
 sudo apt install nodejs
-sudo apt install wazuh-api
+sudo apt install wazuh-api=3.12.3-1
 
 ###############################
 # Prevent accidental updates
