@@ -14,7 +14,7 @@ echo "Wazuh Made Easy Status"
 
 echo " System Update..."
 
-sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+sudo apt update && sudo apt autoremove -y
 
 ###############################
 # Install Wazuh repo
