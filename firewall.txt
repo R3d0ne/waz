@@ -1,0 +1,22 @@
+Firewall  rules : 
+Wazuh Manager Service Ports
+firewall-cmd --permanent --add-port={514,1514,1515,1516}/tcp
+firewall-cmd --permanent --add-port={514,1514}/udp
+firewall-cmd –reload
+
+Wazuh-API Service Port
+firewall-cmd --permanent --add-port=55000/tcp
+firewall-cmd –reload
+
+Elasticearch Service Ports
+firewall-cmd --permanent --add-port={9200,9300}/tcp
+firewall-cmd --reload
+
+
+Kibana Service Port
+firewall-cmd --permanent --add-port=5601/tcp
+firewall-cmd –reload
+
+Wazuh-Agent Service Port
+firewall-cmd --permanent --add-port={514,1514}/udp
+firewall-cmd --reload
