@@ -110,7 +110,7 @@ systemctl start kibana.service
 echo Restarting Kibana
 sleep 10
 sed -i "s/^deb/#deb/" /etc/apt/sources.list.d/elastic-7.x.list
-sudo apt update-y
+sudo apt update -y
 
 ######################################
 # Protect Kibana with a reverse proxy
