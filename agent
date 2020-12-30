@@ -1,0 +1,28 @@
+    
+    haw exemple taa FIM : 
+    
+    <directories check_all="yes" realtime="yes">/var/www/html/files/</directories>
+    <directories check_all="yes" realtime="yes">C:\Program Files\Atlassian\"Application Data"\</directories>
+    
+    
+    haw exemple kifehh tabaath log : 
+    ki tal9a hethi : « <!-- Log analysis --> »:   zid f section hethika kima haka 
+    
+    exemple : 
+    
+  <localfile>
+    <location>/var/log/apache2/*.log</location>
+    <log_format>syslog</log_format>
+  </localfile>
+
+  <localfile>
+    <location>/var/log/mysql/*.log</location>
+    <log_format>syslog</log_format>
+  </localfile>
+  
+    <localfile>
+    <location>C:\Program Files\Atlassian\JIRA\logs\*.log</location>
+    <log_format>eventchannel</log_format>
+  </localfile>
+  
+  fama barsha anwe3 aka syslog , fama apchelog w mssql_log w koll tal9ahom f documentation
